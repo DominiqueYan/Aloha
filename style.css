@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*start of the fonts*/
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-MediumItalic.eot");
+  src: url("fonts/Raleway-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-MediumItalic.woff") format("woff"),
+    url("fonts/Raleway-MediumItalic.ttf") format("truetype"),
+    url("fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-LightItalic.eot");
+  src: url("fonts/Raleway-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-LightItalic.woff") format("woff"),
+    url("fonts/Raleway-LightItalic.ttf") format("truetype"),
+    url("fonts/Raleway-LightItalic.svg#Raleway-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Medium.eot");
+  src: url("fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Medium.woff") format("woff"),
+    url("fonts/Raleway-Medium.ttf") format("truetype"),
+    url("fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Light.eot");
+  src: url("fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Light.woff") format("woff"),
+    url("fonts/Raleway-Light.ttf") format("truetype"),
+    url("fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Regular.eot");
+  src: url("fonts/PlayfairDisplay-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Regular.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Bold.eot");
+  src: url("fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Bold.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Bold.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Italic.eot");
+  src: url("fonts/PlayfairDisplay-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Italic.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Italic.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-BoldItalic.eot");
+  src: url("fonts/PlayfairDisplay-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-BoldItalic.woff") format("woff"),
+    url("fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic")
+      format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family: "Raleway";
+  margin: 0;
+  font-size: 14px;
+  color: #2d2d2d
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logoimg {
+  width: 35vw;
+  margin: 15px;
+}
+.cart {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+}
+.cartimg {
+  width: 15vw
+}
+.main-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  word-spacing: 20px;
+  flex: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-top: 1px solid #d7d7d7;
+  padding-top: 10px;
+}
+
+.main-navigation ul li a {
+  color: #e2574c;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-navigation ul li {
+  display: inline;
+}
+
+.banner {
+  background: url("images/banner-girl.png") no-repeat center bottom,
+    url("images/flower-bkgd.jpg") repeat-x;
+  width: 100vw;  
+  background-size: 110px, cover;
+  height: 300px;
+  text-align: center;
+}
+.banner-text-container {
+  color: red;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 50%;
+}
+.products {
+ display: flex;
+ flex-flow: row wrap;
+}
+
+.products div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.products div a {
+  color: white;
+}
+.menscat {
+  background: url("images/mens-category.jpg");
+  background-repeat: no-repeat;
+  flex: 100%;
+}
+
+.trendscat {
+  background: url("images/trends-category.jpg");
+  flex: 50%;
+  background-repeat: no-repeat;
+}
+
+.glassescat {
+  background: url("images/glasses-category.jpg");
+  flex: 50%;
+  background-repeat: no-repeat;
+}
+
+.salecat {
+  background: url('images/sale-category.jpg');
+  background-repeat: no-repeat;
+  flex: 50%;
+}
+
+.bagscat {
+  background: url('images/bags-category.jpg');
+  background-repeat: no-repeat;
+  flex: 50%;
+}
+
+.womenscat {
+  background: url('images/womens-category.jpg');
+  background-repeat: no-repeat;
+  flex: 100%;
+}
+.newsletter {
+  background: url("images/wave-bkgd.jpg") no-repeat bottom;
+  height: 500px;
+  text-align: center;
+
+}
+.newscontainer {
+ padding-top: 150px;
+ padding-bottom: 150px
+
+}
+footer {
+  background-color: #242424;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
+  .banner {
+    background: url("images/banner-girl.png") no-repeat center 150px,
+      url("images/flower-bkgd.jpg");
+  
+    width: 100vw;  
+    background-size: 30vw 50vh, 100vh 100vw;
+    background-repeat: no-repeat, repeat-x;
+    height: 800px;
+
+}
+}
+
+@media (min-width: 1240px) {
+  body {
+    font-size: 16px;
+  }
+
+  .main-navigation {
+    border: none
+  }
+}
