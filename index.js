@@ -106,7 +106,7 @@ $('a[href*="#about"]')
     ) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
+      if (target.length) {email_address
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
@@ -123,4 +123,16 @@ $('a[href*="#about"]')
       }
     }
   });
+  $(".sign-up-form").on("click", ".submit", function() {
+    if( emailChecker($("input[name='email']").val())===true){
+        alert("Thank you for subscrıbıng!");
+    }else{
+        alert("Not a valid email address!");
+    }
+  });
+// email validity checker source @https://stackoverflow.com/a/2507043
+function emailChecker(email){
+   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+   return regex.test(email);
+}
 });
