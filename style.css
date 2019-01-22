@@ -187,21 +187,44 @@ header {
 }
 
 .banner {
-  background: url("images/banner-girl.png") no-repeat center bottom,
+  background: url("images/banner-girl.png") no-repeat center 55px,
     url("images/flower-bkgd.jpg") repeat-x;
   width: 100vw;  
   background-size: 110px, cover;
   height: 300px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 .banner-text-container {
-  color: red;
-  text-align: center;
+  color: white;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-  height: 50%;
 }
+
+.banner-text-container p {
+  margin: 10px
+}
+
+.collection {
+  font-size: 16px
+}
+
+.season {
+  font-size: 25px
+}
+.about h2{
+  font-style: italic;
+  text-align: center;
+}
+
+.about h2 span{
+  font-weight: bold;
+  font-style: normal;
+}
+
 .products {
  display: flex;
  flex-flow: row wrap;
@@ -253,24 +276,59 @@ header {
   background: url('images/womens-category.jpg');
   background-repeat: no-repeat;
   flex: 100%;
+  margin-bottom: 50px;
 }
+
+.featured {
+  height: auto;
+  text-align: center;
+}
+
 .newsletter {
   background: url("images/wave-bkgd.jpg") no-repeat bottom;
-  height: 500px;
+  height: 400px;
   text-align: center;
-
+  margin-top: 90px;
 }
 .newscontainer {
  padding-top: 150px;
- padding-bottom: 150px
-
+ padding-bottom: 150px;
+ color: white;
 }
+
+.newscontainer h1 {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.newscontainer h1 span{
+  font-style: normal;
+  font-weight: bold;
+}
+
+.email {
+  border-radius: 50px;
+  width: 80vw;
+  height: 40px;
+}
+
+.submit {
+  position: absolute;
+  right: 30px;
+  color: white;
+  background-color: red;
+  border-radius: 50px;
+  height: 45px;
+  width: 85px
+}
+
 footer {
   background-color: #242424;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  height: 200px;  
 }
 
 @media (min-width: 600px) {

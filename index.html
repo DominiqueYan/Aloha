@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aloha Apparel Co.</title>
-    <link rel="stylesheet" href="/style.css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="flickity.min.css"/>
   </head>
 
   <body>
@@ -34,15 +34,15 @@
       </div>
     </section>
 
-    <section class="about">
-      <p>Hand-Crafted <span>Styles</span></p>
+    <section class="about" id="about">
+      <h2>Hand-Crafted <span>Styles</span></h2>
       <p>
         Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse
         our current selection of products or sign-up for updates below.
       </p>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
       <div class= "menscat"><a href=#mens class ="mens">Men's</a></div>
       <div class= "trendscat"><a href=#trends class ="trends">Trends</a></div>
       <div class= "glassescat"><a href=#glasses class ="glasses">Glasses</a></div>
@@ -51,18 +51,34 @@
       <div class= "womenscat"><a href=#womens class ="womens">Women's</a></div>
     </section>
 
-    <section class="featured">
-      <section><h4><img src="images/checked-stretch-dress.jpg" alt="Checkered Stretch Dress">
-        <p>Checkered Stretch Dress</p></h4></section>
-        <section><h4><img src="images/blue-hipster-backpack.jpg" alt="Blue Backpack">
-        <p>Blue Hipster Backpack</p></h4></section>
-        <section><h4><img src="images/demin-overall-shorts.jpg" alt="Denim Overalls">
-        <p>Denim Overall Shorts</p></h4></section>
-        <section><h4><img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
-        <p>Pink Dotted Dress</p></h4>
+    <section class="featured" id="featured">
+        
+        <div class="featured-item stretchdress"><img src="images/checked-stretch-dress.jpg" alt="Checkered Stretch Dress">
+        <p>Dresses</p><h4>Checkered Stretch Dress</h4><p> &dollar; 38.00</p></div>
+  
+        <div class="featured-item bluebackpack"><img src="images/blue-hipster-backpack.jpg" alt="Blue Backpack">
+        <p>Bags</p><h4>Blue Hipster Backpack</h4><p> &dollar; 38.00</p></div>
+
+        <div class="featured-item denimoveralls"><img src="images/demin-overall-shorts.jpg" alt="Denim Overalls">
+        <p>Denim</p><h4>Denim Overall Shorts</h4><p> &dollar; 38.00</p></div>
+
+        <div class="featured-item pinkdotteddress"><img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
+        <p>Dresses</p><h4>Pink Dotted Dress</h4><p> &dollar; 38.00</p></div>
+
+        <div class="featured-item bluesilkdress"><img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
+        <p>Dresses</p><h4>Blue Silk Dress</h4><p> &dollar; 38.00</p></div>
+
+        <div class="featured-item cottonyellowshirt"><img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow Tshirt">
+        <p>Shirt</p><h4>Cotton Yellow Tshirt</h4><p> &dollar; 38.00</p></div> 
+
+        <div class="featured-item cottonblueshirt"><img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
+        <p>Shirt</p><h4>Cotton Blue Shirt</h4><p> &dollar; 38.00</p></div>
+
+        <div class="featured-item stretchknitdress"><img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
+        <p>Dresses</p><h4>Stretch Knit Dress</h4><p> &dollar; 38.00</p></div> 
     </section>
 
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
       <div class="newscontainer">
       <h1>Sign-up for <span>Updates</span></h1>
       <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
@@ -88,6 +104,9 @@
             <i class="fab fa-google-plus-g"></i>
         </div>
     </footer>
-    <script src="index.js"></script> </script>
+    
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="flickity.pkgd.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
