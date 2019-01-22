@@ -187,7 +187,7 @@ header {
 }
 
 .banner {
-  background: url("images/banner-girl.png") no-repeat center 55px,
+  background: url("images/banner-girl.png") no-repeat center bottom,
     url("images/flower-bkgd.jpg") repeat-x;
   width: 100vw;  
   background-size: 110px, cover;
@@ -250,6 +250,7 @@ header {
   height: 150px;
   background-size: cover;
   background-position: center center;
+  margin: 3px;
 }
 
 .products div a {
@@ -262,14 +263,12 @@ header {
   background: url("images/mens-category.jpg");
   background-repeat: no-repeat;
   flex: 100%;
-  margin-bottom: 10px;
 }
 
 .trendscat {
   background: url("images/trends-category.jpg");
   flex: 45%;
   background-repeat: no-repeat;
-  margin-right: 5px;
   
 }
 
@@ -278,7 +277,6 @@ header {
   flex: 45%;
   background-repeat: no-repeat;
   margin-left: 5px;
-  margin-bottom: 10px;
 
 }
 
@@ -286,21 +284,18 @@ header {
   background: url('images/sale-category.jpg');
   background-repeat: no-repeat;
   flex: 45%;
-  margin-right: 5px;
 }
 
 .bagscat {
   background: url('images/bags-category.jpg');
   background-repeat: no-repeat;
   flex: 45%;
-  margin-left: 5px;
 }
 
 .womenscat {
   background: url('images/womens-category.jpg');
   background-repeat: no-repeat;
   flex: 100%;
-  margin-top: 10px;
 }
 
 .featured {
@@ -378,6 +373,10 @@ footer p {
   margin: 10px
 }
 
+footer span {
+  color: #969696
+}
+
 .footer-container p {
   display: none
 }
@@ -387,32 +386,103 @@ footer p {
   body {
     font-size: 16px;
   }
-  .banner {
-    background: url("images/banner-girl.png") no-repeat center 150px,
-      url("images/flower-bkgd.jpg");
+  .logoimg {
+    width: 20vw;
+    flex: 25%;
+  }
+  .cart {
+    position: absolute;
+    right: 0;
+  }
+  .cartimg {
+    width: 10vw;
+    flex: 25%;
+  }
+  .main-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 40vw;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-top: none;
+    padding-top: 10px;
+  }
+
+  .main-navigation ul li a {
+    color: #e2574c;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-items: center;
+    right: 25%;
+  }
   
-    width: 100vw;  
-    background-size: 30vw 50vh, 100vh 100vw;
+  .banner {
+    background: url("images/banner-girl.png") no-repeat center bottom,
+      url("images/flower-bkgd.jpg");
+
+    background-size: 25vw 40vh, 100vh 100vw;
     background-repeat: no-repeat, repeat-x;
-    height: 800px;
+    height: 500px
+  }
 
+.products div {
+  height: 200px;
+  margin: 5px;
+  
 }
-
 .menscat {
-  flex: 50%
+  flex: 45%;
 }
 .trendscat {
-  flex: 25%
+  flex: 20%;
 }
 .glassescat {
-  flex: 25%
+  flex: 20%;
+}
+.salecat {
+  flex: 20%;
+}
+.bagscat {
+  flex: 20%;
+}
+.womenscat {
+  flex: 45%;
+}
+
+.featured-item {
+  width: 50%;
+}
+
+footer {
+  background-color: #242424;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 300px;  
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  text-align:left
+}
+
+footer p {
+  margin: 10px;
+}
+.site-footer {
+  margin-top: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 100px;
 }
 
 .footer-container p {
-  display: inline
+  display: inherit;
 }
 }
-
 @media (min-width: 1240px) {
   body {
     font-size: 16px;
@@ -421,5 +491,4 @@ footer p {
   .main-navigation {
     border: none
   }
-
 }
